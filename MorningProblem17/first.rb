@@ -2,29 +2,30 @@
 # Then write a method that takes a string as an argument. This method will use the returned value from the first method in order to construct a larger string. For instance, if I pass my second method the string “work here.” then the second method should return “Chris, Oggi, Emily work here.”
 #  If you finish, make the method return the string with “and” before the last name. For instance: “Chris, Oggi, and Emily work here.”
 
-# def array_name(array)
-# 	array = ["chris", "oggi", "emily"]
-# 	values = array.join(", ")
-# 	values.each do |value|
-# 		puts value
-# 	end
+def array_name(array)
+	
+	values = array.join(", ")
+	
 
-# end
-
-def names_to_string(names)
-	names[-1] = "and " << names[-1]
-	names.join(", ")
 end
 
-def add_words(names_string, words)
-	names_string << " " << words
-end	
+names = ["chris", "oggi", "emily"]
+p array_name(names)
 
-employees = ["chris", "oggi", "emily"]
+# def names_to_string(names)
+# 	names[-1] = "and " << names[-1]
+# 	names.join(", ")
+# end
 
-employees_string = names_to_string(employees)
+# def add_words(names_string, words)
+# 	names_string << " " << words
+# end	
 
-add_words(employees_string, " work here.")
+# employees = ["chris", "oggi", "emily"]
+
+# employees_string = names_to_string(employees)
+
+# add_words(employees_string, " work here.")
 
 
 
